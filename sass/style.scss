@@ -1,0 +1,16 @@
+*, *::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'montserrat', sans-serif;
+    position: relative;
+}
+div{
+    height: 50vh;
+}
+#Pricing{
+    background-color: aqua;
+}
