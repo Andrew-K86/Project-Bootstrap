@@ -8,4 +8,34 @@
 
 body {
   position: relative;
+  background-color: #444;
+}
+
+.nav {
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link.active {
+  color: lightblue;
+}
+
+.nav-link:hover {
+  color: lightblue;
+}
+
+.fa-bars {
+  padding: 10px;
+}
+
+.fa-solid {
+  color: #fff;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

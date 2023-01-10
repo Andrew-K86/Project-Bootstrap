@@ -1,3 +1,4 @@
+@import "colors";
 *,
 *::before,
 ::after {
@@ -8,4 +9,29 @@
 
 body {
 	position: relative;
+	background-color: #444;
+}
+.nav {
+	text-transform: uppercase;
+}
+.nav-link {
+	color: $white;
+}
+.navbar {
+	.nav-link.active {
+		color: $blue-color;
+	}
+}
+.nav-link:hover {
+	color: $blue-color;
+}
+.fa-bars {
+	padding: 10px;
+}
+.fa-solid {
+	color: $white;
+}
+.navbar-brand {
+	color: $white;
+	font-weight: bold;
 }
