@@ -11,6 +11,11 @@ body {
   background-color: #444;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.4s;
+}
+
 nav {
   text-transform: uppercase;
   z-index: 1;
@@ -21,11 +26,11 @@ nav {
 }
 
 .navbar .nav-link.active {
-  color: lightblue;
+  color: royalblue;
 }
 
 .nav-link:hover {
-  color: lightblue;
+  color: royalblue;
 }
 
 .fa-bars {
@@ -42,7 +47,7 @@ nav {
 }
 
 .games {
-  color: lightblue;
+  color: royalblue;
 }
 
 header {
@@ -50,6 +55,10 @@ header {
 }
 header h1 {
   text-transform: uppercase;
+  font-size: 30px;
+}
+header p {
+  font-size: 14px;
 }
 header .hero-img {
   position: relative;
@@ -88,6 +97,22 @@ header .fa-chevron-down {
   transform: translateX(-50%);
 }
 
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 42px;
+  }
+  header p {
+    font-size: 20px;
+  }
+}
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/game-console-g6ea3d1145_1920.jpg");

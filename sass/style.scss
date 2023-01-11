@@ -11,6 +11,10 @@ body {
 	position: relative;
 	background-color: #444;
 }
+.shadow-bg{
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: background-color .4s;
+}
 nav {
 	text-transform: uppercase;
 	z-index: 1;
@@ -44,6 +48,10 @@ header {
 
 	h1 {
 		text-transform: uppercase;
+		font-size: 30px;
+	}
+	p {
+		font-size: 14px;
 	}
 	.hero-img {
 		position: relative;
@@ -53,7 +61,6 @@ header {
 		background-position: center;
 		background-attachment: fixed;
 		z-index: 0;
-        
 	}
 	.hero-shadow {
 		position: absolute;
@@ -72,19 +79,38 @@ header {
 		text-align: center;
 		padding: 10px;
 	}
-    .btn-outline-light{
-        text-transform: uppercase;
-    }
-    .fa-chevron-down{
-        position: absolute;
-        font-size: 30px;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        
-    }
+	.btn-outline-light {
+		text-transform: uppercase;
+	}
+	.fa-chevron-down {
+		position: absolute;
+		font-size: 30px;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 
+@media (min-width: 375px) {
+	header {
+		h1 {
+			font-size: 36px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	header {
+		h1 {
+			font-size: 42px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+}
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
