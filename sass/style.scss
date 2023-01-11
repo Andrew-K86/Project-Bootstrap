@@ -6,6 +6,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-padding-top: 82px;
+}
 
 body {
 	position: relative;
@@ -40,6 +43,7 @@ nav {
 	color: $main-color;
 }
 .fa-bars {
+	color: $white;
 	padding: 10px;
 }
 .fa-headset {
@@ -111,7 +115,49 @@ header {
 	}
 	.aboutus-card-text {
 		font-size: 14px;
-		
+	}
+	.aboutus-hover {
+		transition: color 0.6s;
+	}
+	.aboutus-hover:hover {
+		color: $main-color;
+		transition: color 0.6s;
+	}
+}
+.aboutus-hero {
+	color: $second-text;
+	position: relative;
+	background-size: cover;
+	background-image: url("../img/technology-ga9f34ab4e_640.jpg");
+	background-position: center;
+
+	z-index: 0;
+
+	.aboutus-hero-shadow {
+		top: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -1;
+	}
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-hero-title {
+		margin-top: 20px;
+		font-size: 18px;
+	}
+	.aboutus-hero-text {
+		font-size: 14px;
+	}
+	.aboutus-hover {
+		transition: color 0.6s;
+	}
+	.aboutus-hover:hover {
+		color: $main-color;
+		transition: color 0.6s;
 	}
 }
 
@@ -135,10 +181,21 @@ header {
 		}
 	}
 }
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
+	}
+	.aboutus-hero {
+		.hero-img {
+			background-image: url("../img/technology-g618e5cf7a_1280.jpg");
+		}
+	}
+}
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
 			background-image: url("../img/game-console-g6ea3d1145_1920.jpg");
 		}
 	}
+	
 }
