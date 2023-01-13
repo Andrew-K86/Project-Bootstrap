@@ -12,6 +12,7 @@ html {
 
 body {
 	position: relative;
+	background-color: $bg-color;
 }
 h2 {
 	text-align: center;
@@ -203,6 +204,9 @@ header {
 @media (min-width: 992px) {
 	html {
 		scroll-padding-top: 72px;
+	}
+	nav{
+		height: 82px;
 	}
 	.aboutus-hero {
 		.hero-img {

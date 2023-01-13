@@ -12,6 +12,7 @@ html {
 
 body {
   position: relative;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -203,6 +204,9 @@ header .fa-chevron-down {
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
+  }
+  nav {
+    height: 82px;
   }
   .aboutus-hero .hero-img {
     background-image: url("../img/technology-g618e5cf7a_1280.jpg");
