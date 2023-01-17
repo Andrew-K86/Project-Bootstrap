@@ -234,12 +234,10 @@ header .fa-chevron-down {
   color: rgb(240, 232, 232);
 }
 .team .card {
-  margin: 20px;
   transition: transform 0.3s;
 }
 .team .card img {
   height: 300px;
-  width: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -247,6 +245,9 @@ header .fa-chevron-down {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+.team .card .card-body {
+  height: 160px;
 }
 .team .card:hover {
   transform: scale(0.95);
@@ -256,7 +257,18 @@ header .fa-chevron-down {
 }
 .team i {
   color: royalblue;
-  margin: 0 25px;
+}
+
+.achivements i {
+  color: #fff;
+  font-size: 48px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+.achivements h5 {
+  margin: 15px;
+}
+.achivements p {
+  text-transform: uppercase;
 }
 
 @media (min-width: 375px) {

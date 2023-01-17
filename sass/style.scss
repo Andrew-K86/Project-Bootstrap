@@ -231,11 +231,11 @@ header {
 		color: $second-text;
 	}
 	.card {
-		margin: 20px;
-		
+		// margin: 20px;
+
 		img {
 			height: 300px;
-			width: auto;
+
 			object-fit: cover;
 		}
 		transition: transform 0.3s;
@@ -244,7 +244,11 @@ header {
 			text-transform: uppercase;
 			margin-bottom: 20px;
 		}
+		.card-body {
+			height: 160px;
+		}
 	}
+	
 	.card:hover {
 		transform: scale(0.95);
 	}
@@ -253,10 +257,21 @@ header {
 	}
 	i {
 		color: $main-color;
-		margin: 0 25px;
 	}
 }
-
+.achivements{
+	i{
+		color: $white;
+		font-size: 48px;
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	}
+	h5{
+		margin: 15px;
+	}
+	p{
+		text-transform: uppercase;
+	}
+}
 @media (min-width: 375px) {
 	header {
 		h1 {
